@@ -1,0 +1,37 @@
+{
+  "name": "@shrink/actions-document-sign",
+  "version": "1.0.0",
+  "description": "Create an Electronic Signature page with commit information",
+  "author": "Samuel Ryan <sam@samryan.co.uk>",
+  "homepage": "https://github.com/shrink/actions-document-sign#readme",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/sign.js",
+    "lint": "eslint 'src/**.js' --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shrink/actions-document-sign.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shrink/actions-document-sign/issues"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/exec": "^1.0.4",
+    "@actions/github": "^4.0.0",
+    "asn1.js": "^5.4.1",
+    "blueimp-tmpl": "^3.18.0",
+    "openpgp": "^4.10.7"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.5",
+    "eslint-plugin-react-hooks": "^4.0.0"
+  }
+}

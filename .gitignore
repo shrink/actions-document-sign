@@ -1,0 +1,6 @@
+node_modules/*
+!node_modules/asn1.js
+!node_modules/bn.js
+!node_modules/inherits
+!node_modules/minimalistic-assert
+!node_modules/safer-buffer

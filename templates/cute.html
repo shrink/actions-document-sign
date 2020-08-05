@@ -1,0 +1,40 @@
+<style type="text/css">
+  .signature {
+    border: 2px solid {%=o.theme.primary%};
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .signature legend {
+    color: {%=o.theme.primary%};
+    font-weight: bold;
+    margin: 0px;
+  }
+
+  .signature ul {
+    margin: 2px;
+    padding: 0px;
+    list-style: none;
+  }
+
+  .signature a {
+    color: {%=o.theme.secondary%};
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .signature span.info {
+    font-weight: bold;
+  }
+</style>
+<fieldset class="signature">
+  <legend>Electronic Signature</legend>
+  <ul>
+    <li>published <a href="{%=o.commit.url%}">{%=o.commit.label%}</a></li>
+    <li>at <span class="info">{%=o.commit.at%}</span></li>
+    <li>by <span class="info">{%=o.author.name%} <a href="mailto:{%=o.author.email%}">&lt;{%=o.author.email%}&gt;</a></span></li>
+    <li>signed with <span class="info">{%=o.commit.key%}</span></li>
+  </ul>
+</fieldset>

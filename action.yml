@@ -1,0 +1,29 @@
+name: 'Electronic Signature'
+description: 'Create an Electronic Signature for a commit'
+author: 'Samuel Ryan <sam@samryan.co.uk>'
+inputs:
+  destination:
+    description: 'Destination for signature'
+    required: false
+    default: '.signature'
+  template:
+    description: 'Path to a template for the signature'
+    required: false
+    default: 'cute.html'
+  primary:
+    description: 'Primary signature colour'
+    required: false
+    default: '#1e7e34'
+  secondary:
+    description: 'Secondary signature colour'
+    required: false
+    default: '#2f80ed'
+outputs:
+  signature:
+    description: 'Electronic Signature File'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'feather'
+  color: 'yellow'
