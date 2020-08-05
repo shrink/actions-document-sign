@@ -4222,7 +4222,7 @@ const openpgp = __webpack_require__(724);
 
 async function run() {
   try {
-    const template = fs.readFileSync(core.getInput('template'), 'utf8');
+    const template = fs.readFileSync('templates/' + core.getInput('template'), 'utf8');
     const destination = core.getInput('destination');
     const primary = core.getInput('primary');
     const secondary = core.getInput('secondary');
