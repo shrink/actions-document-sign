@@ -32,9 +32,9 @@
 <fieldset class="signature">
   <legend>Electronic Signature</legend>
   <ul>
-    <li>published <a href="{%=o.commit.url%}">{%=o.commit.label%}</a></li>
-    <li>at <span class="info">{%=o.commit.at%}</span></li>
+    <li>published <a href="{%=o.object.url%}">{%=o.object.label%}</a></li>
+    <li>at <span class="info">{%=o.author.date%}</span></li>
     <li>by <span class="info">{%=o.author.name%} <a href="mailto:{%=o.author.email%}">&lt;{%=o.author.email%}&gt;</a></span></li>
-    <li>signed with <span class="info">{%=o.commit.key%}</span></li>
+    <li>signed with <span class="info">{%=o.object.key%}</span></li>
   </ul>
 </fieldset>
