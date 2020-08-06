@@ -75,6 +75,7 @@ async function run() {
     fs.writeFileSync(destination, tmpl(template, data));
 
     core.setOutput('signature', destination);
+    core.setOutput('label', label);
   } catch (error) {
     core.setFailed(error.message);
   }

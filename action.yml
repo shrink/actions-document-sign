@@ -21,6 +21,8 @@ inputs:
 outputs:
   signature:
     description: 'Electronic Signature File'
+  label:
+    description: 'Label (tag or commit hash) of the document published'
 runs:
   using: 'node12'
   main: 'dist/index.js'
